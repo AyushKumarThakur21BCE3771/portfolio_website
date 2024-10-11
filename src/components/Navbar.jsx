@@ -104,19 +104,21 @@ const MobileIcon = styled.div`
 
 const MobileMenu = styled.ul`
   width: 100%;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: start;
+  justify-content: space-between;
   gap: 16px;
   padding: 0 6px;
   list-style: none;
   width: 100%;
   padding: 12px 40px 24px 40px;
-  background: ${({ theme }) => theme.card_light + 99};
+  background-color: ${({ theme }) => theme.bg};
   position: absolute;
   top: 80px;
   right: 0;
-
+  border-top: 1px solid white;
   transition: all 0.6s ease-in-out;
   transform: ${({ isOpen }) =>
     isOpen ? "translateY(0)" : "translateY(-100%)"};
@@ -132,7 +134,7 @@ const Navbar = () => {
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to="/">GeeksForGeeks</NavLogo>
+        <NavLogo to="/">portfolio.</NavLogo>
 
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>
           <MenuRounded style={{ color: "inherit" }} />

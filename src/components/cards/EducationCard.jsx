@@ -17,7 +17,7 @@ const Image = styled.img`
   }
 `;
 const Body = styled.div`
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
 `;

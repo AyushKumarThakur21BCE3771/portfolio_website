@@ -2,10 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import {
-  FacebookRounded,
   Instagram,
-  LinkedIn,
-  Twitter,
+  LinkedIn
 } from "@mui/icons-material";
 
 const FooterContainer = styled.div`
@@ -84,7 +82,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <Logo>Rishav Chanda</Logo>
+        <Logo>Ayush Kumar Thakur</Logo>
         <Nav>
           <NavLink href="#About">About</NavLink>
           <NavLink href="#Skills">Skills</NavLink>
@@ -93,20 +91,20 @@ const Footer = () => {
           <NavLink href="#Education">Education</NavLink>
         </Nav>
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.facebook} target="display">
-            <FacebookRounded />
-          </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.twitter} target="display">
-            <Twitter />
-          </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.linkedin} target="display">
+        <SocialMediaIcon href={Bio.linkedin} target="display">
             <LinkedIn />
           </SocialMediaIcon>
           <SocialMediaIcon href={Bio.insta} target="display">
             <Instagram />
           </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.leetcode} target="display">
+            <img src="https://i.ibb.co/QkWgmF5/leetcode.png" alt="leetcode" style={{width: "30px", height:"30px"}}/>
+          </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.github} target="display">
+            <img src="https://i.ibb.co/2qnXSjp/github.png" alt="github" style={{width: "25px", height:"25px", borderRadius: "70%"}}/>
+          </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>&copy; 2024 Rishav Chanda. All rights reserved.</Copyright>
+        <Copyright>&copy; 2024 Ayush Kumar Thakur. All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );
